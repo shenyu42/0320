@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+<input type="number" id="p1" value=5>
+<input type="number" id="p2" value=5>
+<br>
+	<button type="button" onclick="add()">add</button>
+	<button type="button" onclick="minus()">minus</button>
+	<button type="button" onclick="multi()">multi</button>
+	<button type="button" onclick="divid()">divid</button>
+	<button type="button" onclick="clean()">clean</button>
+	<p id="demo"></p>
+<script>
+function add(){
+     var x , y ;
+     x = parseInt(document.getElementById("p1").value);
+     y = parseInt(document.getElementById("p2").value);
+     document.getElementById("demo").innerHTML = x + y;
+}
+function minus(){
+     var x , y ;
+     x = parseInt(document.getElementById("p1").value);
+     y = parseInt(document.getElementById("p2").value);
+     document.getElementById("demo").innerHTML = x - y;
+}
+function multi(){
+     var x , y ;
+     x = parseInt(document.getElementById("p1").value);
+     y = parseInt(document.getElementById("p2").value);
+     document.getElementById("demo").innerHTML = x * y;
+}
+function divid(){
+     var x , y ;
+     x = parseInt(document.getElementById("p1").value);
+     y = parseInt(document.getElementById("p2").value);
+     document.getElementById("demo").innerHTML = x / y;
+}
+function clean(){
+     document.getElementById("p1").value = "";
+     document.getElementById("p2").value= "";
+}
+</script>
+</body>
+</html>

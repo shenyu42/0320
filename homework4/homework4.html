@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+<canvas id="mCanvas" width="450" height="450" style="border:2px solid #001111;"> </canvas>
+<script>
+        var c=document.getElementById("mCanvas");
+        var ctx=c.getContext("2d");
+        var x=0;
+        var y=0;
+        ctx.fillStyle="blue";
+        setInterval(function(){ draw() }, 100);
+        function draw()
+        {
+            x++;
+            y++;
+            ctx.fillRect(0,0,450,450);
+            ctx.clearRect(x,y,50,50);
+            if(x>=450)
+            {
+                x=0;
+            }
+            if(y>=450)
+            {
+                y=0;
+            }
+        }
+</script>
+</body>
+</html>

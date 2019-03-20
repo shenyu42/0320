@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="number" id="grade" value=0>
+<button type="button" onclick="myFunction()">result</button>
+<script >
+	function myFunction() { 
+  var tgrade;
+  var gr = document.getElementById("grade");
+  if (gr.value< 60 ) {
+     document.getElementById("result").innerHTML="fail";
+  } else {
+    document.getElementById("result").innerHTML="Good";
+  }
+}
+
+</script>
+<h1 id="result">result</h1>
+</body>
+</html>
